@@ -38,7 +38,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <NavLink to="/stats" className={linkClass}>
+            <NavLink to="/friends" className={linkClass}>
               <MdBarChart size={22} />
               <span className="font-medium text-sm md:text-base hidden sm:inline">Stats</span>
             </NavLink>
