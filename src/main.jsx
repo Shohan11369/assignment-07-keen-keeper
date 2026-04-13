@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <TimeLine/>,
       },
       {
-        path: "/friends",
+        path: "/starts",
         element: <FriendDetails/>,
       },
     ],
