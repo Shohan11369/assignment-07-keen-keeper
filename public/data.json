@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Aisha Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "aisha.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["university", "close friend"],
+    "bio": "We studied together at university. Always supports me during tough times and loves traveling.",
+    "goal": 14,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 2,
+    "name": "Daniel Tan",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "daniel.tan@yahoo.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["work", "colleague"],
+    "bio": "Worked together on multiple IT projects. Very helpful and passionate about coding.",
+    "goal": 12,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 3,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["school", "best friend"],
+    "bio": "Childhood friend. We share everything and meet regularly for coffee and long chats.",
+    "goal": 10,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 4,
+    "name": "Arif Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/55.jpg",
+    "email": "arif.hossain@hotmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["gym", "fitness buddy"],
+    "bio": "We go to the gym together. Keeps me motivated to stay consistent and healthy.",
+    "goal": 15,
+    "next_due_date": "2025-07-08"
+  },
+  {
+    "id": 5,
+    "name": "Mei Ling",
+    "picture": "https://randomuser.me/api/portraits/women/60.jpg",
+    "email": "meiling88@gmail.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["neighbor", "friendly"],
+    "bio": "Lives next door. We often share meals and help each other with daily tasks.",
+    "goal": 12,
+    "next_due_date": "2025-07-19"
+  },
+  {
+    "id": 6,
+    "name": "Rafiul Karim",
+    "picture": "https://randomuser.me/api/portraits/men/77.jpg",
+    "email": "rafiul.karim@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["startup", "business partner"],
+    "bio": "We are working on a startup together. Regular communication keeps our ideas flowing.",
+    "goal": 7,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 7,
+    "name": "Sarah Ahmed",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "sarah.ahmed@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["family", "cousin"],
+    "bio": "My cousin. We used to meet often during family gatherings but recently lost touch.",
+    "goal": 14,
+    "next_due_date": "2025-07-12"
+  },
+  {
+    "id": 8,
+    "name": "Jason Lim",
+    "picture": "https://randomuser.me/api/portraits/men/25.jpg",
+    "email": "jason.lim@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["gaming", "online friend"],
+    "bio": "Met through online gaming. We still play together occasionally and chat about tech.",
+    "goal": 10,
+    "next_due_date": "2025-07-21"
+  }
+]
