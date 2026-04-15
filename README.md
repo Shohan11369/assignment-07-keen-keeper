@@ -1,16 +1,23 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+📱 Friend Tracker App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A responsive React app to manage and track your interactions with friends (Call, Text, Video).
 
-## React Compiler
+🚀 Features:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👥 View friends with status (Overdue, Almost Due, On-track)
+👤 Detailed friend profile with stats and goals
+⚡ Quick Check-In (Call, Text, Video) with timeline updates
+📜 Timeline history of all interactions
+📊 Analytics with Pie Chart (Recharts)
+🔔 Toast notifications
+❌ 404 Page + ⏳ Loading state
+📱 Fully responsive (Mobile, Tablet, Desktop)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+React.js
+React Router DOM
+Tailwind CSS
+Recharts
