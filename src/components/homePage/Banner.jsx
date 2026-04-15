@@ -1,5 +1,3 @@
-import React from "react";
-
 const Banner = () => {
   return (
     <div className="bg-gray-100 min-h-[50vh]">
@@ -28,18 +26,18 @@ const Banner = () => {
           </div>
 
           <div className="p-6 bg-gray-50 text-center rounded-2xl shadow-sm">
-            <h2 className="text-2xl font-bold">10</h2>
-            <p className="text-gray-600">Total Friends</p>
+            <h2 className="text-2xl font-bold">3</h2>
+            <p className="text-gray-600">On Track</p>
           </div>
 
           <div className="p-6 bg-gray-50 text-center rounded-2xl shadow-sm">
-            <h2 className="text-2xl font-bold">10</h2>
-            <p className="text-gray-600">Total Friends</p>
+            <h2 className="text-2xl font-bold">6</h2>
+            <p className="text-gray-600">Need Attention</p>
           </div>
 
           <div className="p-6 bg-gray-50 text-center rounded-2xl shadow-sm">
-            <h2 className="text-2xl font-bold">10</h2>
-            <p className="text-gray-600">Total Friends</p>
+            <h2 className="text-2xl font-bold">12</h2>
+            <p className="text-gray-600">Interactions This Month</p>
           </div>
         </div>
       </div>

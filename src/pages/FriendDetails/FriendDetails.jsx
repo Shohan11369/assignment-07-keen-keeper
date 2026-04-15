@@ -28,7 +28,6 @@ const FriendDetails = () => {
       date: today,
     };
 
-    
     const updatedFriends = friends.map((f) => {
       if (f.id === parseInt(id)) {
         return {
@@ -57,12 +56,6 @@ const FriendDetails = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between">
           <h2 className="text-xl font-bold">friend Details</h2>
-          <Link
-            to="/"
-            className="bg-white px-4 py-2 rounded-lg shadow-sm text-sm font-medium hover:bg-gray-50 transition-all border border-gray-100"
-          >
-            <FaHome /> Home
-          </Link>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">

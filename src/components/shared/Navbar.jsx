@@ -1,6 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import MyNavLink from "./MyNavLink";
+import { FaHome } from "react-icons/fa";
+import { RiTimeLine } from "react-icons/ri";
+import { BsGraphUpArrow } from "react-icons/bs";
 
 const Navbar = () => {
   return (
@@ -19,15 +22,15 @@ const Navbar = () => {
       <div className="flex-none">
         <ul className="menu menu-horizontal items-center gap-1 md:gap-2 lg:gap-4 px-1">
           <li>
-            <MyNavLink to="/">Home</MyNavLink>
+            <MyNavLink to="/"><FaHome />Home</MyNavLink>
           </li>
 
           <li>
-            <MyNavLink to="/timeline">Timeline</MyNavLink>
+            <MyNavLink to="/timeline"><RiTimeLine />Timeline</MyNavLink>
           </li>
 
           <li>
-            <MyNavLink to="/stars">Stars</MyNavLink>
+            <MyNavLink to="/stars"><BsGraphUpArrow />Stars</MyNavLink>
           </li>
         </ul>
       </div>

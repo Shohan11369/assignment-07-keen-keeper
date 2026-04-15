@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useFriendsData = () => {
- 
+  
   const [friends, setFriends] = useState(() => {
     const saved = sessionStorage.getItem("friends_temporary_data");
     return saved ? JSON.parse(saved) : [];
@@ -11,7 +11,7 @@ const useFriendsData = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-    
+     
       if (friends.length === 0) {
         const res = await fetch("/data.json");
         const data = await res.json();
