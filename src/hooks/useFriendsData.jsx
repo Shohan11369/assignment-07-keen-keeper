@@ -14,7 +14,7 @@ const useFriendsData = () => {
         const res = await fetch("/data.json");
         const data = await res.json();
 
-        // 🔥 just add delay here
+        //  add delay here
         setTimeout(() => {
           setFriends(data);
           sessionStorage.setItem(
