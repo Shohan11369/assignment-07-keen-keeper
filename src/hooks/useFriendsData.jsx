@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 const useFriendsData = () => {
-  
   const [friends, setFriends] = useState(() => {
     const saved = sessionStorage.getItem("friends_temporary_data");
     return saved ? JSON.parse(saved) : [];
@@ -11,15 +10,19 @@ const useFriendsData = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-     
       if (friends.length === 0) {
         const res = await fetch("/data.json");
         const data = await res.json();
-        
-        setFriends(data);
-        
-        sessionStorage.setItem("friends_temporary_data", JSON.stringify(data));
-        setLoading(false);
+
+        // 🔥 just add delay here
+        setTimeout(() => {
+          setFriends(data);
+          sessionStorage.setItem(
+            "friends_temporary_data",
+            JSON.stringify(data),
+          );
+          setLoading(false);
+        }, 800);
       } else {
         setLoading(false);
       }
@@ -28,14 +31,12 @@ const useFriendsData = () => {
     fetchData();
   }, []);
 
- 
   useEffect(() => {
     if (friends.length > 0) {
       sessionStorage.setItem("friends_temporary_data", JSON.stringify(friends));
     }
   }, [friends]);
 
-  
   useEffect(() => {
     const handleUnload = () => {
       sessionStorage.removeItem("friends_temporary_data");
