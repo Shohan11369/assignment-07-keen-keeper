@@ -39,69 +39,71 @@ const Stars = () => {
 
   const COLORS = ["#7c3aed", "#1f7a63", "#34d399"];
 
-  if (loading)
-    return (
-      <div className="h-screen flex justify-center items-center">
-        <HashLoader color="#2f5d50" />
-      </div>
-    );
-
   return (
     <div className="bg-slate-50 min-h-screen p-6 md:p-10">
       <h1 className="text-2xl font-bold text-black mb-6">
         Friendship Analytics
       </h1>
-      <div className="max-w-3xl mx-auto bg-white rounded-2xl p-8 shadow-sm">
-        {/* pie chart */}
 
-        <h2 className="text-xl font-semibold text-[#2f5d50]">
-          By Interaction Type
-        </h2>
-
-        <div className="flex justify-center items-center">
-          <PieChart width={300} height={300}>
-            <Pie
-              data={starsData}
-              cx="50%"
-              cy="50%"
-              innerRadius={70}
-              outerRadius={100}
-              paddingAngle={5}
-              dataKey="value"
-            >
-              {starsData.map((entry, index) => {
-                return <Cell key={`cell-${index}`} fill={COLORS[index]}></Cell>;
-              })}
-            </Pie>
-            <Tooltip />
-
-            <Label
-              value={allInteractions.length}
-              position="center"
-              style={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                fill: "#334155",
-              }}
-            />
-          </PieChart>
+      {loading ? (
+        <div className="flex justify-center">
+          <HashLoader color="#2f5d50" />
         </div>
+      ) : (
+        <div className="max-w-3xl mx-auto bg-white rounded-2xl p-8 shadow-sm">
+          {/* pie chart */}
 
-        <div className="flex justify-center gap-6 mt-4 text-sm">
-          <div className="flex items-center gap-2">
-            <span className="w-3 h-3 bg-purple-600 rounded-full"></span>
-            Text
+          <h2 className="text-xl font-semibold text-[#2f5d50]">
+            By Interaction Type
+          </h2>
+
+          <div className="flex justify-center items-center">
+            <PieChart width={300} height={300}>
+              <Pie
+                data={starsData}
+                cx="50%"
+                cy="50%"
+                innerRadius={70}
+                outerRadius={100}
+                paddingAngle={5}
+                dataKey="value"
+              >
+                {starsData.map((entry, index) => {
+                  return (
+                    <Cell key={`cell-${index}`} fill={COLORS[index]}></Cell>
+                  );
+                })}
+              </Pie>
+              <Tooltip />
+
+              <Label
+                value={allInteractions.length}
+                position="center"
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                  fill: "#334155",
+                }}
+              />
+            </PieChart>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="w-3 h-3 bg-[#1f7a63] rounded-full"></span>
-            Call
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="w-3 h-3 bg-emerald-400 rounded-full"></span>
-            Video
+
+          <div className="flex justify-center gap-6 mt-4 text-sm">
+            <div className="flex items-center gap-2">
+              <span className="w-3 h-3 bg-purple-600 rounded-full"></span>
+              Text
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-3 h-3 bg-[#1f7a63] rounded-full"></span>
+              Call
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-3 h-3 bg-emerald-400 rounded-full"></span>
+              Video
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
